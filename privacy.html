@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Schuessel Workspace CLI</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 760px;
+      margin: 48px auto;
+      padding: 0 24px;
+      line-height: 1.65;
+      color: #1f2937;
+      background: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e5e7eb; background: #111827; }
+      a { color: #60a5fa; }
+      footer { border-color: #374151; color: #9ca3af; }
+    }
+    nav a { margin-right: 20px; font-weight: 500; }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 0.92em;
+      color: #4b5563;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>Effective Date: November 19, 2026</p>
+    <nav>
+      <a href="https://der-schuessel.github.io/">Home</a>
+      <a href="https://der-schuessel.github.io/privacy.html">Privacy Policy</a>
+      <a href="https://der-schuessel.github.io/terms.html">Terms of Service</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>1. Overview</h2>
+    <p>
+      <strong>Schuessel Workspace CLI</strong> is a private, owner-operated command-line application used solely
+      by its developer/owner to access, search, and organize personal Google Workspace data. It does not onboard,
+      collect, or store data from third-party public users.
+    </p>
+
+    <h2>2. Data Accessed via Google APIs</h2>
+    <p>When authorized by the account owner via OAuth 2.0, the application accesses:</p>
+    <ul>
+      <li>Email metadata, message bodies, conversation threads, and attachments via <code>gmail.readonly</code> solely at the explicit direction of the account owner.</li>
+      <li>Unsent email draft creation via <code>gmail.compose</code> only when explicitly opted into by the account owner.</li>
+    </ul>
+
+    <h2>3. Data Storage, Security &amp; Sharing</h2>
+    <ul>
+      <li><strong>No Third-Party Sharing or Sale:</strong> Google user data is never sold, rented, licensed, or transferred to third-party data brokers or advertisers.</li>
+      <li><strong>Credential Protection:</strong> OAuth 2.0 refresh tokens are stored with restricted owner-only permissions (<code>0600</code>) in the owner's private environment.</li>
+      <li><strong>No Model Training:</strong> Data retrieved from Google Workspace APIs is never used to train, fine-tune, or improve generalized third-party machine learning models.</li>
+    </ul>
+
+    <h2>4. Google API Services User Data Policy (Limited Use)</h2>
+    <p>
+      Schuessel Workspace CLI's use and transfer to any other app of information received from Google APIs adheres
+      to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+      including the Limited Use requirements.
+    </p>
+
+    <h2>5. Revocation &amp; Deletion</h2>
+    <p>
+      Access may be revoked at any time via local credential removal (<code>gmail-cli auth logout</code>) or directly
+      in Google Account settings at <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.
+    </p>
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://der-schuessel.github.io/">Home</a> ·
+      <a href="https://der-schuessel.github.io/privacy.html">Privacy Policy</a> ·
+      <a href="https://der-schuessel.github.io/terms.html">Terms of Service</a>
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schuessel Workspace CLI — Application Overview</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 760px;
+      margin: 48px auto;
+      padding: 0 24px;
+      line-height: 1.65;
+      color: #1f2937;
+      background: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e5e7eb; background: #111827; }
+      a { color: #60a5fa; }
+      .card { background: #1f2937; border-color: #374151; }
+      footer { border-color: #374151; color: #9ca3af; }
+    }
+    header { margin-bottom: 32px; }
+    nav a { margin-right: 20px; font-weight: 500; }
+    .card {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.92em;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 0.92em;
+      color: #4b5563;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Schuessel Workspace CLI</h1>
+    <p>Private, single-owner command-line integration for read-first Google Workspace search and document organization.</p>
+    <nav>
+      <a href="https://der-schuessel.github.io/">Home</a>
+      <a href="https://der-schuessel.github.io/privacy.html">Privacy Policy</a>
+      <a href="https://der-schuessel.github.io/terms.html">Terms of Service</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Purpose of This Application</h2>
+      <p>
+        <strong>Schuessel Workspace CLI</strong> is an owner-operated personal productivity command-line utility.
+        It enables the account owner to search messages, inspect conversation threads, download personal document
+        attachments (such as receipts and invoices), and optionally stage unsent email drafts for manual review.
+      </p>
+    </section>
+
+    <section>
+      <h2>How Google User Data Is Accessed &amp; Protected</h2>
+      <ul>
+        <li><strong>Least-Privilege Scopes:</strong> Requests read-only mailbox access (<code>https://www.googleapis.com/auth/gmail.readonly</code>), with optional unsent draft creation (<code>https://www.googleapis.com/auth/gmail.compose</code>) only when explicitly enabled by the account owner.</li>
+        <li><strong>Non-Destructive Transport Policy:</strong> Automated email sending, message deletion, trashing, and mailbox filter modifications are blocked at the application transport layer.</li>
+        <li><strong>Single-Owner Operation:</strong> Operated exclusively by the project owner for personal workflows; not offered as a multi-tenant public SaaS product.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Legal &amp; Compliance Links:
+      <a href="https://der-schuessel.github.io/privacy.html">Privacy Policy</a> ·
+      <a href="https://der-schuessel.github.io/terms.html">Terms of Service</a> ·
+      <a href="https://github.com/der-schuessel">GitHub Profile</a>
+    </p>
+  </footer>
+</body>
+</html>
